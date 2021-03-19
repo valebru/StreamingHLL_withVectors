@@ -23,4 +23,4 @@ python2.7 StreamHLL_Vec-uniformsim.py
 python2.7 StreamHLL_Vec-pcapsim.py <file_list>
 ```
 
-File list is a text file in which each line reports the path to the trace to test. Multiple line in this file we produce multiple independent analysis.
+File list is a text file in which each line reports the path to the trace to test. Multiple line in this file will produce multiple independent analysis.
