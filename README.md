@@ -3,6 +3,17 @@
 Cardinality estimation, also known as count-distinct, is the problem of finding the number of different elements in a set with repeated elements. Among the many approximate algorithms proposed for this task, HyperLogLog (HLL) has established itself as the state of the art  due to its ability to accurately estimate cardinality over a large range of values using a small memory footprint. When elements arrive in a stream, as in the case of most networking applications, improved techniques are possible.
 We specifically propose a new algorithm that improves the accuracy of cardinality estimation by grouping counters, and by using their new organization to further track all updates within a given counter size range (compared with just the last update as in the standard HLL). Results show that when using the same number of counters, one configuration of the new scheme reduces the relative error by approximately 0.86x using the same amount of memory as the streaming HLL and another configuration achieves a similar accuracy reducing the memory needed by approximately 0.85x.
 
+You can cite this repository or the related paper as:
+```
+@article{bruschi2021,
+  title={More Accurate Streaming Cardinality Estimation with Vectorized Counters},
+  author={Bruschi, Valerio and Reviriego, Pedro and Pontarelli, Salvatore and Ting, Daniel and Bianchi, Giuseppe},
+  journal={IEEE Networking Letters},
+  year={2021},
+  publisher={IEEE}
+}
+```
+
 ## Requirements
 ```
 sudo apt-get install python2.7
